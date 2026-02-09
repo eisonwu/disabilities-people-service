@@ -1,0 +1,13 @@
+// 设备异常列表
+.device-alert-page {
+    padding: 0;
+
+    .toolbar {
+        margin-bottom: 20px;
+    }
+
+    .el-table {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+}

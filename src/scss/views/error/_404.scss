@@ -1,0 +1,8 @@
+// 404 页
+.error-page {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, var(--app-primary-bg) 0%, var(--app-main-bg) 100%);
+}

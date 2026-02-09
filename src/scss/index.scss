@@ -1,0 +1,63 @@
+@use "tailwindcss";
+@use "theme";
+@use "element-plus/dist/index.css" as element-plus;
+@use "layout/index" as layout;
+@use "views/home";
+@use "views/login";
+@use "views/archive/list";
+@use "views/archive/device";
+@use "views/monitor/map";
+@use "views/monitor/device-alert";
+@use "views/monitor/health-alert";
+@use "views/alert/help";
+@use "views/alert/workorder";
+@use "views/stats/report";
+@use "views/system/member";
+@use "views/error/404" as error-page;
+
+@layer base {
+    body {
+        @apply antialiased bg-[var(--app-main-bg)];
+        color: #1e293b;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+// 全局卡片与表格区域统一样式
+.el-card {
+    border-radius: 12px;
+    border-color: var(--app-card-border);
+}
+.el-table {
+    --el-table-border-color: var(--app-card-border);
+    --el-table-header-bg-color: var(--app-primary-bg);
+}
+.el-menu--vertical .el-menu-item.is-active {
+    background: var(--app-sidebar-active-bg);
+    color: var(--app-sidebar-active-text);
+}
+
+// 列表页通用：工具栏（左筛选、右操作）、分页
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.toolbar-left {
+    flex: 1;
+    min-width: 0;
+}
+.toolbar-right {
+    flex-shrink: 0;
+}
+.pagination-wrap {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+}

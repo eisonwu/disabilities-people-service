@@ -1,0 +1,13 @@
+// 工单列表
+.alert-workorder-page {
+    padding: 0;
+
+    .toolbar {
+        margin-bottom: 20px;
+    }
+
+    .el-table {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+}

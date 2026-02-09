@@ -1,0 +1,41 @@
+// 登录页
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 50%, #f1f5f9 100%);
+
+    .login-card {
+        width: 420px;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid var(--app-card-border);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+
+        .el-card__header {
+            background: linear-gradient(135deg, var(--app-primary) 0%, var(--app-primary-dark) 100%);
+            color: #fff;
+            padding: 20px 24px;
+            font-size: 20px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .el-card__body {
+            padding: 28px 24px;
+        }
+    }
+
+    .card-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .submit-btn {
+        width: 100%;
+        font-weight: 500;
+        height: 44px;
+    }
+}

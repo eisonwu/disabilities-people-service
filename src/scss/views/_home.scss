@@ -1,0 +1,73 @@
+// 首页 - 数据概览
+.home-page {
+    padding: 0;
+
+    .page-title {
+        margin: 0 0 24px;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--app-primary-dark);
+        letter-spacing: -0.02em;
+    }
+
+    .stat-row {
+        margin-bottom: 20px;
+    }
+
+    .stat-card {
+        border-radius: 12px;
+        border: 1px solid var(--app-card-border);
+        transition: transform 0.2s, box-shadow 0.2s;
+        overflow: hidden;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -8px rgba(13, 148, 136, 0.15);
+        }
+
+        .el-card__header {
+            padding: 14px 18px;
+            font-weight: 600;
+            color: var(--el-text-color-primary);
+            border-bottom: 1px solid var(--app-card-border);
+            background: var(--app-card-bg);
+        }
+
+        .stat-value {
+            margin: 0 0 4px;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--app-primary-dark);
+            letter-spacing: -0.02em;
+        }
+
+        .stat-desc {
+            margin: 0;
+            font-size: 13px;
+            color: var(--el-text-color-secondary);
+        }
+    }
+
+    .stat-row .el-col:nth-child(1) .stat-card .el-card__header { border-left: 4px solid var(--app-primary); }
+    .stat-row .el-col:nth-child(2) .stat-card .el-card__header { border-left: 4px solid #3b82f6; }
+    .stat-row .el-col:nth-child(3) .stat-card .el-card__header { border-left: 4px solid #f59e0b; }
+    .stat-row .el-col:nth-child(4) .stat-card .el-card__header { border-left: 4px solid #10b981; }
+
+    .chart-card {
+        margin-bottom: 20px;
+        border-radius: 12px;
+        border: 1px solid var(--app-card-border);
+
+        .el-card__header {
+            padding: 14px 18px;
+            font-weight: 600;
+            color: var(--el-text-color-primary);
+            border-bottom: 1px solid var(--app-card-border);
+        }
+
+        .chart-container {
+            height: 300px;
+            border-radius: 8px;
+        }
+    }
+}

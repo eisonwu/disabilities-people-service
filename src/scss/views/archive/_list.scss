@@ -1,0 +1,21 @@
+// 档案列表
+.archive-list-page {
+    padding: 0;
+
+    .toolbar {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .el-table {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .placeholder {
+        color: var(--el-text-color-secondary);
+        font-size: 14px;
+    }
+}

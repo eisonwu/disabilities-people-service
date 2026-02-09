@@ -1,0 +1,18 @@
+// 求助列表
+.alert-help-page {
+    padding: 0;
+
+    .toolbar {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .el-table {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+}

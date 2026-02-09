@@ -1,0 +1,101 @@
+// 布局：侧栏、顶栏、主区
+.layout-container {
+    height: 100vh;
+}
+
+.layout-aside {
+    background: var(--app-sidebar-bg);
+    transition: width 0.2s ease;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.08);
+
+    .el-menu {
+        --el-menu-bg-color: var(--app-sidebar-bg);
+        --el-menu-text-color: var(--app-sidebar-text);
+        --el-menu-hover-bg-color: var(--app-sidebar-hover-bg);
+        --el-menu-active-color: var(--app-sidebar-active-text);
+        border-right: none;
+    }
+
+    .el-menu-item.is-active {
+        background: var(--app-sidebar-active-bg);
+        color: var(--app-sidebar-active-text);
+        font-weight: 500;
+    }
+
+    .el-sub-menu__title {
+        color: var(--app-sidebar-text);
+        &:hover {
+            background: var(--app-sidebar-hover-bg);
+            color: var(--app-sidebar-active-text);
+        }
+    }
+
+    .el-menu-item {
+        color: var(--app-sidebar-text);
+        &:hover {
+            background: var(--app-sidebar-hover-bg);
+            color: var(--app-sidebar-active-text);
+        }
+    }
+}
+
+.logo {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: var(--app-sidebar-active-text);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    letter-spacing: 0.05em;
+    background: linear-gradient(180deg, rgba(13, 148, 136, 0.15) 0%, transparent 100%);
+}
+
+.layout-menu {
+    border-right: none;
+}
+
+.layout-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--app-header-bg);
+    border-bottom: 1px solid var(--app-header-border);
+    padding: 0 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.collapse-btn {
+    font-size: 18px;
+    color: var(--el-text-color-regular);
+    &:hover {
+        color: var(--app-primary);
+    }
+}
+
+.user-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: var(--el-text-color-regular);
+    transition: background 0.2s;
+    &:hover {
+        background: var(--el-fill-color-light);
+        color: var(--app-primary);
+    }
+}
+
+.layout-main {
+    background: var(--app-main-bg);
+    padding: 20px;
+    overflow: auto;
+}

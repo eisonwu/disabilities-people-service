@@ -1,0 +1,50 @@
+// 统计报表
+.stats-report-page {
+    padding: 0;
+
+    .toolbar {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .report-card {
+        margin-bottom: 20px;
+
+        .card-title {
+            font-weight: 600;
+            color: var(--el-text-color-primary);
+        }
+
+        .el-table {
+            margin-bottom: 16px;
+        }
+    }
+
+    .report-chart {
+        height: 260px;
+        width: 100%;
+
+        &--half {
+            flex: 1;
+            min-width: 0;
+        }
+    }
+
+    .chart-row {
+        display: flex;
+        gap: 16px;
+        align-items: stretch;
+
+        .report-chart--half:first-child {
+            flex: 1.2;
+        }
+    }
+
+    .el-card {
+        border-radius: 12px;
+    }
+}
